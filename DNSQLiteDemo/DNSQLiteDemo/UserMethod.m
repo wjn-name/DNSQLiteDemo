@@ -15,6 +15,7 @@
     static UserMethod *_shareUserMethod=nil;
     dispatch_once(&pred,^{
         _shareUserMethod =[[UserMethod alloc] init];
+        [_shareUserMethod createTableWithDataBaseName:@"userinfo.sqlite"];
     });
     return _shareUserMethod;
 }

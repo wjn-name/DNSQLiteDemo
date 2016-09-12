@@ -23,7 +23,7 @@
 }
 
 - (void)saveUserInfo {
-    [[UserMethod shareUserMethod] createTableWithDataBaseName:@"userinfo.sqlite"];
+//    [[UserMethod shareUserMethod] createTableWithDataBaseName:@"userinfo.sqlite"];
     UserModel *userModel = [[UserModel alloc] init];
     userModel.nickName = @"张三";
     userModel.userID = @"1001";
